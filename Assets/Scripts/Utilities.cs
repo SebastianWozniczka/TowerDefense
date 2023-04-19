@@ -38,13 +38,13 @@ namespace Assets.Scripts
 
             foreach (var item in paths)
             {
-                ls.Paths.Add(new Vector2(float.Parse(item.Attribute("X").Value), float.Parse(item.Attribute("Y").Value)));
+               ls.Paths.Add(new Vector2(float.Parse(item.Attribute("X").Value), float.Parse(item.Attribute("Y").Value)));
             }
 
             var waypoints = el.Element("Waypoints").Elements("Waypoint");
             foreach (var item in waypoints)
             {
-                ls.Waypoints.Add(new Vector2(float.Parse(item.Attribute("X").Value), float.Parse(item.Attribute("Y").Value)));
+               ls.Waypoints.Add(new Vector2(float.Parse(item.Attribute("X").Value), float.Parse(item.Attribute("Y").Value)));
             }
 
             var rounds = el.Element("Rounds").Elements("Round");

@@ -4,6 +4,7 @@ using System.Linq;
 using Assets.Scripts;
 using System.Collections;
 using System;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -48,7 +49,7 @@ public class GameManager : MonoBehaviour
     public SpriteRenderer BunnyGeneratorSprite;
     [HideInInspector]
     public bool FinalRoundFinished;
-    public GUIText infoText;
+    public GUI infoText;
 
     private object lockerObject = new object();
 
@@ -280,18 +281,18 @@ public class GameManager : MonoBehaviour
         switch (CurrentGameState)
         {
             case GameState.Start:
-                infoText.text = "Tap to start!";
+                //infoText.text = "Tap to start!";
                 break;
             case GameState.Playing:
-                infoText.text = "Money: " + MoneyAvailable.ToString() + "\n"
-                    + "Life: " + Lives.ToString() + "\n" +
-                    string.Format("round {0} of {1}", currentRoundIndex + 1, levelStuffFromXML.Rounds.Count);
+               // infoText.text = "Money: " + MoneyAvailable.ToString() + "\n"
+                    //+ "Life: " + Lives.ToString() + "\n" +
+                   // string.Format("round {0} of {1}", currentRoundIndex + 1, levelStuffFromXML.Rounds.Count);
                 break;
             case GameState.Won:
-                infoText.text = "Won! Tap to restart!";
+              //  infoText.text = "Won! Tap to restart!";
                 break;
             case GameState.Lost:
-                infoText.text = "Lost :( Tap to restart!";
+               // infoText.text = "Lost :( Tap to restart!";
                 break;
             default:
                 break;
