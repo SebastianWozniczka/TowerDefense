@@ -1,8 +1,14 @@
 fileFormatVersion: 2
 guid: 5b9bb9fb6b842624db44df45e2f9add1
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Carrot: {instanceID: 0}
+  - Banana: {fileID: 1035625597798107304, guid: be243d61013982a499b24f946ce459ad,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
